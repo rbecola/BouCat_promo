@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Агентство котов-телохранителей | «БойКот»</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <style media="screen">
+      body {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- курсор -->
+    <div id="circle">
+      <div class="cursor">
+        <div class="cursor-circle"></div>
+      </div>
+    </div>
+    <!-- меню -->
+    <div class="menu button">
+      <div class="menu-buttons" onclick="document.location='building.html'">
+        здание штаба
+      </div>
+      <div class="menu-buttons" onclick="document.location='agents.html'">
+        наши агенты
+      </div>
+      <div class="menu-buttons" onclick="document.location='news.html'">
+        новости
+      </div>
+      <div class="menu-buttons" onclick="document.location='store.html'">
+        магазин
+      </div>
+      <div class="menu-buttons" onclick="document.location='form.html'">
+        оставить заявку
+      </div>
+    </div>
+    <div class="menu-mobile">
+      <div class="menu-mobile-icon menu-mobile-icon-open">
+        <svg class="menu-svg" width="18" height="11" viewBox="0 0 18 11" xmlns="http://www.w3.org/2000/svg">
+          <path class="path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M18 3H0V0H18V3Z" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V8H18V11Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="menu-mobile-icon menu-mobile-icon-close display-none">
+        <svg class="menu-svg" width="18" height="11" viewBox="0 0 18 11" xmlns="http://www.w3.org/2000/svg">
+          <path class="path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M18 3H0V0H18V3Z" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V8H18V11Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="menu-mobile-buttons" onclick="document.location='index.html'">
+        главная
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='building.html'">
+        здание штаба
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='agents.html'">
+        наши агенты
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='news.html'">
+        новости
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='store.html'">
+        магазин
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='form.html'">
+        оставить заявку
+      </div>
+    </div>
+
+    <!-- контент -->
+    <div class="moving-text-footer moving-text-footer-mobile">
+      <div class="h1 h1-move">АГЕНТСТВО КОТОВ ТЕЛОХРАНИТЕЛЕЙ АГЕНТСТВО КОТОВ ТЕЛОХРАНИТЕЛЕЙ АГЕНТСТВО</div>
+    </div>
+    <div class="h1 home-block-1">
+      АГЕНТСТВО КОТОВ ТЕЛОХРАНИТЕЛЕЙ
+    </div>
+    <div class="home-block-2 radial-gradient">
+      <p class="h4 h4-home">
+        Это первоклассное агентство телохранителей, в&nbsp;котором предоставляются услуги по&nbsp;охране и&nbsp;защите котят на&nbsp;протяжении всех 7&nbsp;жизней.
+      </p>
+      <div class="moving-text moving-text-home">
+        БОЙКОТ БОЙКОТ
+      </div>
+      <img id="draggable1" class="home-img-1 button" src="img\home-1.png">
+      <img id="draggable2" class="home-img-2 button" src="img\home-2.png">
+      <img id="draggable3" class="home-img-3 button" src="img\home-3.svg">
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
