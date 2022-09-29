@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Агентство котов-телохранителей | «БойКот»</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <style media="screen">
+      body {
+        overflow: hidden;
+      }
+      .menu-buttons {
+        flex: 0 0 auto;
+        width: 20%;
+        border-bottom: none;
+      }
+      .menu {
+        border: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- курсор -->
+    <div id="circle">
+      <div class="cursor">
+        <div class="cursor-circle"></div>
+      </div>
+    </div>
+    <!-- кнопка назад -->
+    <div class="menu">
+      <div class="menu-buttons button" onclick="history.back();return false;">
+        вернуться назад
+      </div>
+    </div>
+
+    <!-- контент -->
+    <div class="form-done-block radial-gradient">
+      <div class="form-done-text h3 b-top">
+        УСПЕШНО ОТПРАВЛЕНО, СКОРО МЫ С ВАМИ СВЯЖЕМСЯ!
+      </div>
+    </div>
+    <!-- футер -->
+    <div class="moving-text-footer">
+      <div class="h1 h1-move">АГЕНТСТВО КОТОВ ТЕЛОХРАНИТЕЛЕЙ АГЕНТСТВО КОТОВ ТЕЛОХРАНИТЕЛЕЙ АГЕНТСТВО</div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
