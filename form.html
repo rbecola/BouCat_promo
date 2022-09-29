@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Заявка на услугу агентства | «БойКот»</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <style media="screen">
+      body {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- курсор -->
+    <div id="circle">
+      <div class="cursor">
+        <div class="cursor-circle"></div>
+      </div>
+      <div class="circle_blur"></div>
+    </div>
+    <!-- меню -->
+    <div class="menu button">
+      <div class="menu-arrow" onclick="document.location='index.html'">
+        <svg class="menu-svg" width="27" height="26" viewBox="0 0 27 26" xmlns="http://www.w3.org/2000/svg">
+          <path class="path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M6.62155 14.5001L15.0609 22.9395L12.9396 25.0608L0.878906 13.0001L12.9396 0.939453L15.0609 3.06077L6.62155 11.5001H27.0002V14.5001H6.62155Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="menu-buttons" onclick="document.location='building.html'">
+        здание штаба
+      </div>
+      <div class="menu-buttons" onclick="document.location='agents.html'">
+        наши агенты
+      </div>
+      <div class="menu-buttons" onclick="document.location='news.html'">
+        новости
+      </div>
+      <div class="menu-buttons" onclick="document.location='store.html'">
+        магазин
+      </div>
+      <div class="menu-buttons" style="background-color: #FF4848; color: black">
+        оставить заявку
+      </div>
+    </div>
+    <div class="menu-mobile">
+      <div class="menu-mobile-icon menu-mobile-icon-open">
+        <svg class="menu-svg" width="18" height="11" viewBox="0 0 18 11" xmlns="http://www.w3.org/2000/svg">
+          <path class="path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M18 3H0V0H18V3Z" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V8H18V11Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="menu-mobile-icon menu-mobile-icon-close display-none">
+        <svg class="menu-svg" width="18" height="11" viewBox="0 0 18 11" xmlns="http://www.w3.org/2000/svg">
+          <path class="path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M18 3H0V0H18V3Z" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V8H18V11Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="menu-mobile-buttons" onclick="document.location='form.html'">
+        оставить заявку
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='building.html'">
+        здание штаба
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='agents.html'">
+        наши агенты
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='news.html'">
+        новости
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='store.html'">
+        магазин
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='index.html'">
+        главная
+      </div>
+    </div>
+
+    <!-- заголовок -->
+    <div class="form-r1">
+      <div class="h2-block h2-block-form h2-block-form-1 h2 b-left b-right">
+      </div>
+      <div class="h2-block h2-block-form-2 h2 b-right">
+        ЗАЯВКА НА УСЛУГУ АГЕНТСТВА
+      </div>
+    </div>
+    <!-- коты -->
+    <div class="form-cats b-left b-right b-bottom">
+      <div class="button-cat cat1 cat-form cat-form-active"></div>
+      <div class="button-cat cat2 cat-form"></div>
+      <div class="button-cat cat3 cat-form"></div>
+    </div>
+    <!-- форма -->
+    <div class="form-main b-left b-right b-bottom">
+      <div class="form-main-c1 b-right">
+        <div class="form-main-c1-rows b-bottom">
+          <div class="form-main-c1-rows-name body b-right">Как вас зовут?</div>
+          <form class="form-main-c1-rows-type">
+            <input class="form-input h3" placeholder="СЛАДКАЯ БУЛОЧКА">
+          </form>
+        </div>
+        <div class="form-main-c1-rows b-bottom">
+          <div class="form-main-c1-rows-name body b-right">Номер телефона</div>
+          <form class="form-main-c1-rows-type">
+            <input type="tel" class="form-input h3" placeholder="+7(000) 000-00-00">
+          </form>
+        </div>
+        <div class="form-main-c1-rows b-bottom">
+          <div class="form-main-c1-rows-name body b-right">Почтовый адрес</div>
+          <form class="form-main-c1-rows-type">
+            <input type="email" class="form-input h3" placeholder="MEOW@MAIL.RU">
+          </form>
+        </div>
+        <div class="form-main-c1-rows b-bottom">
+          <div class="form-main-c1-rows-name body b-right">На какую дату?</div>
+          <form class="form-main-c1-rows-type">
+            <input type="date" value="2022-10-15" class="form-input h3 form-date">
+          </form>
+        </div>
+        <div class="form-main-c1-rows">
+          <div class="form-main-c1-rows-name body b-right">На какое время?</div>
+          <form class="form-main-c1-rows-type">
+            <input type="time" class="form-input h3 form-date" value="14:00">
+          </form>
+        </div>
+      </div>
+      <div class="form-main-c2 form-main-c2-cat1">
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="1">Индивидуальная охрана в толпе</label>
+          <input class="radio" type="radio" id="1" name="radio">
+          <label class="radio-square" for="1"></label>
+        </div>
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="2">Незаметная слежка за подозреваемым</label>
+          <input class="radio" type="radio" id="2" name="radio">
+          <label class="radio-square" for="2"></label>
+        </div>
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="3">Предварительная разведка территории</label>
+          <input class="radio" type="radio" id="3" name="radio">
+          <label class="radio-square" for="3"></label>
+        </div>
+        <div class="button-block button-block-form button" onclick="document.location='form-done.html'">
+          <div class="h3" align="center">
+            ПОДТВЕРДИТЬ И ОТПРАВИТЬ
+          </div>
+        </div>
+      </div>
+      <div class="form-main-c2 form-main-c2-cat2 display-none">
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="1-2">Личное сопровождение на событие</label>
+          <input class="radio" type="radio" id="1-2" name="radio2">
+          <label class="radio-square" for="1-2"></label>
+        </div>
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="2-2">Защита в людных местах</label>
+          <input class="radio" type="radio" id="2-2" name="radio2">
+          <label class="radio-square" for="2-2"></label>
+        </div>
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="3-2">Охрана частных помещений и офисов</label>
+          <input class="radio" type="radio" id="3-2" name="radio2">
+          <label class="radio-square" for="3-2"></label>
+        </div>
+        <div class="button-block button-block-form button" onclick="document.location='form-done.html'">
+          <div class="h3" align="center">
+            ПОДТВЕРДИТЬ И ОТПРАВИТЬ
+          </div>
+        </div>
+      </div>
+      <div class="form-main-c2 form-main-c2-cat3 display-none">
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="1-3">Вооруженная атака с целью обороны</label>
+          <input class="radio" type="radio" id="1-3" name="radio3">
+          <label class="radio-square" for="1-3"></label>
+        </div>
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="2-3">Сопровождение представителей власти</label>
+          <input class="radio" type="radio" id="2-3" name="radio3">
+          <label class="radio-square" for="2-3"></label>
+        </div>
+        <div class="button form-main-c2-rows b-bottom form-main-c2-radio body">
+          <label class="label" for="3-3">Организация защиты для компаний</label>
+          <input class="radio" type="radio" id="3-3" name="radio3">
+          <label class="radio-square" for="3-3"></label>
+        </div>
+        <div class="button-block button-block-form button" onclick="document.location='form-done.html'">
+          <div class="h3" align="center">
+            ПОДТВЕРДИТЬ И ОТПРАВИТЬ
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
