@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Наши агенты | «БойКот»</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <style media="screen">
+      body {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- курсор -->
+    <div id="circle">
+      <div class="cursor">
+        <div class="cursor-circle"></div>
+      </div>
+      <div class="circle_blur"></div>
+    </div>
+    <!-- меню -->
+    <div class="menu button">
+      <div class="menu-arrow" onclick="document.location='index.html'">
+        <svg class="menu-svg" width="27" height="26" viewBox="0 0 27 26" xmlns="http://www.w3.org/2000/svg">
+          <path class="path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M6.62155 14.5001L15.0609 22.9395L12.9396 25.0608L0.878906 13.0001L12.9396 0.939453L15.0609 3.06077L6.62155 11.5001H27.0002V14.5001H6.62155Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="menu-buttons" onclick="document.location='building.html'">
+        здание штаба
+      </div>
+      <div class="menu-buttons" style="background-color: #FF4848; color: black">
+        наши агенты
+      </div>
+      <div class="menu-buttons" onclick="document.location='news.html'">
+        новости
+      </div>
+      <div class="menu-buttons" onclick="document.location='store.html'">
+        магазин
+      </div>
+      <div class="menu-buttons" onclick="document.location='form.html'">
+        оставить заявку
+      </div>
+    </div>
+    <div class="menu-mobile">
+      <div class="menu-mobile-icon menu-mobile-icon-open">
+        <svg class="menu-svg" width="18" height="11" viewBox="0 0 18 11" xmlns="http://www.w3.org/2000/svg">
+          <path class="path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M18 3H0V0H18V3Z" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V8H18V11Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="menu-mobile-icon menu-mobile-icon-close display-none">
+        <svg class="menu-svg" width="18" height="11" viewBox="0 0 18 11" xmlns="http://www.w3.org/2000/svg">
+          <path class="path-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M18 3H0V0H18V3Z" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V8H18V11Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="menu-mobile-buttons" onclick="document.location='agents.html'">
+        наши агенты
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='index.html'">
+        главная
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='building.html'">
+        здание штаба
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='news.html'">
+        новости
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='store.html'">
+        магазин
+      </div>
+      <div class="menu-mobile-buttons menu-mobile-buttons-hidden" onclick="document.location='form.html'">
+        оставить заявку
+      </div>
+    </div>
+
+    <!-- заголовок -->
+    <div class="agents-r1">
+      <svg class="button mobile arrow-slider arrow-slider-agents arrow-slider1-agents" width="55" height="25" viewBox="0 0 55 25" fill="black" xmlns="http://www.w3.org/2000/svg" onclick="plusSlides(-1)">&#10094;>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.74264 13.5607L14.182 22L12.0607 24.1213L0 12.0607L12.0607 0L14.182 2.12132L5.74264 10.5607H54.6211V13.5607H5.74264Z"/>
+      </svg>
+      <svg class="button mobile arrow-slider arrow-slider-agents arrow-slider2-agents" width="55" height="25" viewBox="0 0 55 25" fill="black" xmlns="http://www.w3.org/2000/svg" onclick="plusSlides(1)">&#10095;>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M48.8785 13.5607L40.4391 22L42.5604 24.1213L54.6211 12.0607L42.5604 0L40.4391 2.12132L48.8785 10.5607H0V13.5607H48.8785Z"/>
+      <div class="h2-block h2-block-agents h2 b-left b-right">
+        АГЕНТ СЭР МУРЗИК
+      </div>
+      <div class="h2-block h2-block-agents h2-block-agents-cat2 h2 b-left b-right">
+        АГЕНТ МИСТЕР БАРС
+      </div>
+      <div class="h2-block h2-block-agents h2-block-agents-cat3 h2 b-left b-right">
+        АГЕНТ МИСТЕР БЭТ
+      </div>
+      <div class="h2-block h2-block-agents-2 h2 b-right">
+      </div>
+    </div>
+    <!-- коты -->
+    <div class="agents-r2 b-left b-right">
+      <div class="agents-r2-c1 b-bottom b-right body-cat1">
+        <div class="agents-r2-c1-body body body-block b-bottom">
+          Самый скрытный агент-разведчик.
+          Никто не сможет скрыться от его глаз
+          и никто не сможет его заметить.<br><br>
+          Идеальный выбор для тайных операций, разведки и слежки. Опыт работы 3,5 года.
+        </div>
+        <a class="button agents-r2-c1-button agents-r2-c1-button-desktop h3 body-block" href="https://rbecola.github.io/alina1/" target="_blank">
+          один рабочий день<br>из жизни сэра мурзика
+        </a>
+        <a class="button agents-r2-c1-button agents-r2-c1-button-mobile h3 body-block b-bottom" href="https://rbecola.github.io/alina1/" target="_blank">
+          один рабочий день из&nbsp;жизни сэра мурзика
+        </a>
+        <div class="agents-r3-stars agents-r3-stars-ipad agents-r3-stars-mobile stars1 b-right"></div>
+      </div>
+      <div class="agents-r2-c1 b-right b-bottom body-cat2 display-none">
+        <div class="agents-r2-c1-body body body-block">
+          Мистер Барс — один из наших самых взрослых и опытных телохранителей в агентстве.<br><br>Он отличается своим умением составлять лучшие схемы по защите наших клиентов, очень трудолюбив и компетентен. Стаж 5 лет.
+        </div>
+        <div class="agents-r3-stars agents-r3-stars-ipad stars1 b-right b-top"></div>
+      </div>
+      <div class="agents-r2-c1 b-right b-bottom body-cat3 display-none">
+        <div class="agents-r2-c1-body body body-block">
+          Наш самый меткий и быстрый агент. Обладает превосходным зрением, слухом и скоростью реакции.<br><br>Мистер Бэт может справиться с любым количеством вооруженных врагов и не заработать ни одной царапинки. Работает с нами агентстве уже 3 года.
+        </div>
+        <div class="agents-r3-stars agents-r3-stars-ipad stars1 b-right b-top"></div>
+      </div>
+      <div class="agents-r3-stars agents-r3-stars-mobile-iphone stars1 b-bottom"></div>
+      <div class="agents-r2-c2 b-bottom radial-gradient">
+        <svg class="button arrow-slider arrow-slider-desktop arrow-slider-agents arrow-slider1-agents" width="55" height="25" viewBox="0 0 55 25" fill="black" xmlns="http://www.w3.org/2000/svg" onclick="plusSlides(-1)">&#10094;>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.74264 13.5607L14.182 22L12.0607 24.1213L0 12.0607L12.0607 0L14.182 2.12132L5.74264 10.5607H54.6211V13.5607H5.74264Z"/>
+        </svg>
+        <svg class="button arrow-slider arrow-slider-desktop arrow-slider-agents arrow-slider2-agents" width="55" height="25" viewBox="0 0 55 25" fill="black" xmlns="http://www.w3.org/2000/svg" onclick="plusSlides(1)">&#10095;>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M48.8785 13.5607L40.4391 22L42.5604 24.1213L54.6211 12.0607L42.5604 0L40.4391 2.12132L48.8785 10.5607H0V13.5607H48.8785Z"/>
+        </svg>
+        <div class="cat-agents big-cat1"></div>
+        <div class="cat-agents big-cat2"></div>
+        <div class="cat-agents big-cat3"></div>
+
+      </div>
+    </div>
+    <div class="agents-r3 b-left b-right">
+      <div class="agents-r3-stars agents-r3-stars-desktop stars1 b-right"></div>
+      <div onclick="document.location='form.html'" class="button agents-r3-button h3">ОСТАВИТЬ ЗАЯВКУ НА УСЛУГУ АГЕНТСТВА</div>
+    </div>
+
+    <!-- футер -->
+    <div class="moving-text-footer moving-text-footer-agents">
+      <div class="h1 h1-move">АГЕНТСТВО КОТОВ ТЕЛОХРАНИТЕЛЕЙ АГЕНТСТВО КОТОВ ТЕЛОХРАНИТЕЛЕЙ АГЕНТСТВО</div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
